@@ -3,11 +3,11 @@ const navLinks = document.querySelectorAll(".nav-link");
 const navMenu = document.querySelector("#navMenu");
 const scrollToTopBtn = document.querySelector("#scrollToTopBtn");
 
-function handleScroll(){
+function handleScroll() {
   if (navbar) {
     navbar.classList.toggle("navbar-scrolled", window.scrollY > 8);
   }
-  
+
   if (scrollToTopBtn) {
     if (window.scrollY > 300) {
       scrollToTopBtn.classList.add("show");
